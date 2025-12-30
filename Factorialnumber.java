@@ -1,0 +1,16 @@
+package com.jasipracice.samples;
+
+import java.util.Scanner;
+
+public class factorialnumber {
+	public static void main(String[] args) {
+		int a, b = 1;
+    Scanner sc = new Scanner(System.in);
+		System.out.println("enter a");
+		a = sc.nextInt();
+    for (int i = 1; i <= a; i++) {
+			b = b * i;
+    }
+		System.out.println(b);
+  }
+}
