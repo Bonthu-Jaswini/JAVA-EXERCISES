@@ -1,0 +1,22 @@
+public class reverseofarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		boolean a[] = new boolean[] { true, false, false, true, false, true };
+//	for(int i=a.length-1;i<a.length-1-i;i++) {
+//		System.out.print(a[i]);
+//	}
+		// System.out.println(a[0]);
+		int start = 0;
+		int end = a.length - 1;
+		while (start < end) {
+			boolean temp = a[start];
+			a[start] = a[end];
+			a[end] = temp;
+			start++;
+			end--;
+
+		}
+		System.out.println(Arrays.toString(a));
+	}
+}
